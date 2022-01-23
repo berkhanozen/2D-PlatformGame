@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         pauseAction.UI.Pause.performed += context => TogglePause();
         playerController = playerObject.GetComponent<PlayerController>();
+        Time.timeScale = 1f;
     }
 
     private void TogglePause()
